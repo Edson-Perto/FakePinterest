@@ -29,7 +29,7 @@ def criarconta():
         database.session.add(usuario)
         database.session.commit()
         login_user(usuario, remember=True)
-        return redirect(url_for("perfil", id_usuario=usuario.username))
+        return redirect(url_for("perfil", id_usuario=usuario.id))
     return render_template('criarconta.html', form=form_criarconta)
 
 
