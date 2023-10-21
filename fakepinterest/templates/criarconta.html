@@ -38,8 +38,7 @@
 
       <div class="div-input">
         {{ form.username.label(class="label") }}
-        {% if
-        <form action="" class="username"></form>.errors %}
+        {% if form.username.errors %}
           {% for erro in form.username.errors %}
             <p style="color: red">{{ erro }}</p>
           {% endfor %}
